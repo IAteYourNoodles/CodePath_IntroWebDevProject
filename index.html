@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Waste Less Food</title> 
+  <link rel="icon" href="https://cdn-icons-png.freepik.com/512/12318/12318238.png">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#links">Links</a></li>
+      <li ><button id="theme-button">Toggle Dark Mode</button></li>
+    </ul>
+  </div>
+  
+  <div class="header-container" id="home">
+    <!--- Headings --->
+    
+    <div class="header-item">
+      <h1>Waste Less Food</h1>
+      <h3>Do your part to reduce food waste</h3>
+    </div>
+    <div id="header-img">
+      <img src="/images/recyclefood.png" alt="Graphic containg spoiled food" width="480"/>
+    </div>
+    <!---
+    <div class="header-item">
+        <button type="button" class="header-button">Statistics</button>
+    <button type="button" class="header-button">Relevant Websites</button>
+    </div> --->
+  </div>
+
+
+    <!--- About --->
+  <div class="about">
+    <h2 id="about">About My Topic</h2>
+    <p style="width: 1024px">Food waste is a significant issue contributing to greenhouse gas emissions through rotting food. It occurs throughout the food supply chain but can be further mitigated by focusing on consumers at home. People at home can be more efficient in their meal planning and often overbuy amounts of food that will not be used before their expiration dates.
+    </p>
+  <iframe width="840" height="472.5" src="https://www.youtube.com/embed/xkxsgG8nbZo?si=aZlCPiBozybgRFUn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="revealable" style="margin-left: 10px;"></iframe>
+  </div>
+
+    <!--- Impact --->
+    <h2 id="impact">Impact!</h2>
+
+    <div class="petition" id="petition">
+  
+        <h2>Pledge to Prevent Food Waste 📢</h2>
+        <div class="petition-container">
+  
+  
+          <div class="petition-para">
+            <p>Pledge to hold yourself accountable for food waste and utilize the resources available to you to reduce food waste. Food waste is an issue on a large scale, but it is important to recognize the importance of your personal responsibility and the significance of your individual impact on the community. By pledging to prevent food waste, you are supporting a sustainable and eco-friendly food system. Only through a united effort can we all make a difference in food waste.
+            </p>
+
+          </div>
+  
+          <div class="signatures revealable">
+            <p>🖊️ Mike from Nashville has taken the pledge.</p>
+            <p>🖊️ George from San Diego has taken the pledge.</p>
+            <p>🖊️ Cynthia from Austin has taken the pledge.</p>
+            <p id="counter"> 🖊️ 3 people have signed this petition and support this cause.</p>
+          </div>
+  
+        </div>
+  
+      <!--- Sign Petition Form --->
+      <form id="sign-petition" title="sign-petition">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="hometown">Hometown:</label>
+        <input type="text" id="hometown" name="hometown">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+      </form>
+  
+       <!--- Sign Now Button --->
+      <button id="sign-now-button">Sign Now</button>
+  
+    </div>
+  
+    <!-- Modal -->
+    <div id="thanks-modal" class="modal">
+  
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div id="modal-text-container">
+          <p id="thanks-modal-content"></p>
+          <img src="/images/saved.png" alt="Image of food on counter with piggybank" width="300" id="modal-img" />
+          <!-- button here (stretch feature) -->
+        </div>
+        <!-- image here-->
+      </div>
+  
+    </div>
+
+    <div>
+      <h3>Landfills</h3>
+      <p style="width: 1536px; margin-left: 5%;">Consumer-sided food waste encompasses the leftovers pushed to the back of the fridge, the untouched fruits and vegetables spoiling in the pantry, and the meals abandoned on restaurant plates. This type of waste not only squanders precious resources like water, land, and energy used in food production but also contributes to environmental degradation through methane emissions in landfills. Food waste accumulates in landfills, which are a major source of greenhouse gas emissions. Rotting food produces methane which is a greenhouse gas that can be considered worse than carbon dioxide.
+      </p>
+      <img style="margin-left: 5%;" src="/images/wastelandfill.png" alt="Landfill image" width="480"  class="revealable"/>
+      
+      <h3>Consumer-Sided Food Waste</h3>
+      <p style="width: 1536px; margin-left: 5%">The largest source of food waste comes from consumers. The majority of food waste is produced in the home, which can be mitigated by the decisions of conscious consumer. Addressing consumer-sided food waste requires a multifaceted approach involving education on meal planning and portion control, innovative packaging solutions to extend food shelf life, and policies that encourage donation and composting. By minimizing consumer-sided food waste, individuals can play a crucial role in building a more sustainable and efficient food system.
+      </p>
+      <img style="margin-left: 5%;" src="/images/foodwastepiechart.png" alt="Pie chart of food waste losses" width="480"  class="revealable"/>
+    </div>
+
+    <h2 id="links">Links</h2>
+
+    <a target="_blank" rel="noopener noreferrer" href="https://www.usda.gov/foodwaste/faqs">
+        <article>
+            <h3>Food Waste FAQS by the USDA</h3>
+            <p style="width: 1536px; margin-left: 8%;">The official USDA website covers more information about food waste, including its causes and methods to reduce food waste. The site discusses various causes of food loss and waste, ranging from production to consumer levels, including spoilage and consumer behavior. Additionally, the website explains how food loss and waste are defined in the context of the reduction goal and suggests strategies to reduce waste, emphasizing prevention and recovery methods.</p>
+        </article>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" href="https://www.usda.gov/foodlossandwaste">
+    <img style="margin-left: 35%;" src="/images/usda-food-waste-infographic.png" alt="USDA food waste infographic image" width="480"  class="revealable"/>
+    </a>
+  
+    <script src="index.js"></script>
+</body>
+
+</html>
